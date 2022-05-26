@@ -10,15 +10,46 @@
     font-family: Source;
     src: url(SourceCodePro-Regular.otf) format(opentype);
 }
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+.background {
+    background-image: url(backdrop.png);
+    background-position: center;
+    background-repeat: norepeat;
+    background-size: cover;
+    filter: blur(4px) opacity(0.8);
+    height: 100%;
+    width: 100%;
+}
 h1 {
     font-family: Comfortaa;
     font-size: 18pt;
+    color: white;
 }
 p {
     font-family: Ubuntu;
     font-size: 14pt;
+    color: white;
 }
 code {
     font-family: Source;
     font-size: 14pt;
+}
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    height: 8%;
+}
+.sus {
+    margin-top: 2%;
+}
+button {
+    border-radius: 32px;
 }
