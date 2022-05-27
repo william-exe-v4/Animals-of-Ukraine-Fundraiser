@@ -10,22 +10,16 @@
     font-family: Source;
     src: url(SourceCodePro-Regular.otf) format(opentype);
 }
-* {
-    box-sizing: border-box;
-}
 html {
     background-color: black;
     height: 100%;
     width: 100%;
-}
-.background {
     background-image: url(backdrop.png);
+    background-color: black;
     background-position: center;
     background-repeat: norepeat;
     background-size: cover;
-    filter: blur(4px) opacity(0.8);
-    height: 100%;
-    width: 100%;
+    background-attachment: fixed;
 }
 h1 {
     font-family: Comfortaa;
@@ -44,12 +38,66 @@ code {
 .header {
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
-    height: 8%;
-}
-.sus {
-    margin-top: 2%;
+    top: 0%;
+    height: 5%;
+    backdrop-filter: blur(8px) brightness(64%);
+    -webkit-backdrop-filter: blur(8px) brightness(64%);
+    z-index: 2048;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 button {
+    border-radius: 64px;
+    font-family: Comfortaa;
+}
+.button {
+    border-radius: 64px;
+}
+#title {
+    font-size: 24pt;
+    color: #ffd700;
+}
+.callout {
+    backdrop-filter: brightness(82%); 
+    -webkit-backdrop-filter: brightness(82%);
     border-radius: 32px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+#donate1 {
+    position: absolute;
+    right: 2%;
+}
+i {
+    position: relative; 
+    top: -2px;
+}
+.infotile {
+    backdrop-filter: brightness(50%);
+    -webkit-backdrop-filter: brightness(50%);
+    border-radius: 32px;
+    padding: 4%;
+    margin: 2% 2% 2% 2%;
+}
+.is-yellow {
+    background-color: #ffd700;
+    color: #0057b7;
+}
+.is-blue {
+    background-color: #0057b7;
+    color: #ffd700;
+}
+.generic {
+    border-radius: 32px;
+    padding: 2%;
+    margin: 2%;
+}
+.ways {
+    text-align: center;
+    font-size: 24pt;
+    color: white;
+}
+#donate {
+    min-width: 100%;
 }

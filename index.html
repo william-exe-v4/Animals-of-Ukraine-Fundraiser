@@ -8,22 +8,65 @@
         <link rel="icon" type="image/x-icon" href="flag.svg">
     </head>
     <body>
-        <div class="background"></div>
-        <div class="header columns notification is-info">
-            <div class="column is-9">
-                <h1>Animals in Ukraine</h1>
-                <p style="color: grey;">by Crestwood School</p>                
+        <div class="header tile is-ancestor" id="header">
+            <div class="tile is-parent" style="margin-left: 2%;">
+                <div class="level">
+                    <h1 id="title" class="level-item">Animals in Ukraine</h1>
+                    <span style="width: 16px;" class="level-item"></span>
+                    <p class="level-item" style="color: #0057b7;">by Crestwood School</p>
+                </div>
             </div>
-            <div class="column is-2"><button class="button">Save the Animals</button></div>
+            <div class="tile is-parent"><button class="button is-yellow" id="donate1"><i class="fi-xnsuxl-heart-solid"></i> Save the Animals</button></div>
         </div>
-        <div class="columns sus">
-            <img src="dog.png" class="column is-3" style="height: 25%;">
+        <div class="columns sus" style="padding-top: 2%; margin: 0 2% 0 2%;">
+            <img src="dog.png" class="column is-5" style="height: 25%; border-radius: 32px;">
             <div class="column">
-                <h1 st>Animals in Ukraine NEED Your help</h1>
-                <button id="donatebutton" class="button is-primary">Help them</button>
+                <div class="callout">
+                    <div id="callout-content">
+                        <h1 style="font-size: 32pt;">Lost and wounded animals in Ukraine need <strong style="color: #00d1b2;">YOUR</strong> help</h1>
+                        <button class="button is-yellow" id="donate2"><i class="fi-xnsuxl-heart-solid" style="position: relative; top:-2px;"> </i>Help them</button>
+                        <button id="infobutton" class="button is-blue"><i class="fi-xnsuxl-info-solid"></i> More info</button>
+                    </div>
+                </div>
             </div>
         </div>
+       
+        <div class="tile is-ancestor" id="info">
+            <div class="tile is-vertical">
+                <div class="tile is-parent infotile"><p>As people are being evacuated from the war zone in Ukraine, many animals are left behind. Lost, wounded, and starving, the helpless animals roam through the ruins of cities. To help with the rescue of these animals, Crestwood School is starting a fundraiser. We are collecting donations in our local area for ____[insert charity here]____</p></div>
+                <div class="tile is-parent infotile"><p>As you may have previously noticed, we have recently hosted a bake and book sale that was quite successful in raising funds for animal rescue, however, to rescue more animals, we will need more help from people like <strong style="color: #00d1b2;">you</strong>.</p></div>
+            </div>
+        </div>
+        <hr style="min-height: 64px; opacity: 0;"></hr>
+        <div class="tile is-ancestor" id="donate">
+            <div style="opacity: 0.80;">
+                <div class="tile is-vertical notification is-yellow generic">
+                    <h1 class="tile is-parent" style="font-size: 32pt;">There are 4 ways you can help out</h1>
+                    <div class="tile is-parent">
+                        <div class="tile is-vertical notification is-blue generic">
+                            <h1 class="ways">Bottle Drive</h1>
+                            <p>Drop off your bottles at the <strong style="color: white;">West Edmonton Bottle Depot</strong> and make sure to let them know that these are for the "Crestwood Fundraiser"</p>
+                        </div>
+                        <div class="tile is-vertical notification is-blue generic">
+                            <h1 class="ways">Send in Donations</h1>
+                            <p>Bring cash to the Crestwood School office for the fundraiser</p>
+                        </div>
+                        <div class="tile is-vertical notification is-blue generic">
+                            <h1 class="ways">Donate Here</h1>
+                            <p>We are still working on setting up stripe for payments, but for now, you could head on over to the <button style="display:inline;" id="webdonation" class="is-primary button">donation page</button> to contribute cryptocurrency.</p>
+                        </div>
+                        <div class="tile is-vertical notification is-blue generic">
+                            <h1 class="ways">Spread the Word</h1>
+                            <p>Just let your folks know that they too can help rescue animals from Ukraine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="min-height: 64px; opacity: 0;"></hr>
+        <h1 style="font-size: 64pt; text-align:center;">Thank You</h1>
     </body>
 </html>
 <script defer src="https://friconix.com/cdn/friconix.js"></script>
 <script src="index.js"></script>
+<script defer src="https://friconix.com/cdn/friconix.js"></script>
