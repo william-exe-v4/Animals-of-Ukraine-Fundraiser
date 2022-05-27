@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donate to Animals In Ukraine</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="bulma.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="flag.svg">
+    </head>
+    <body>
+        <div class="header tile is-ancestor" id="header">
+            <div class="tile is-parent" style="margin-left: 2%;" id="titletile">
+                <div class="level">
+                    <h1 id="title" class="level-item">Animals in Ukraine</h1>
+                    <span style="width: 16px;" class="level-item"></span>
+                    <p class="level-item" style="color: #0057b7;">by Crestwood School</p>
+                </div>
+            </div>
+            <div class="tile is-parent"><button class="button is-yellow" id="donate1"><i class="fi-xnsuxl-heart-solid"></i> Save the Animals</button></div>
+        </div>
+        <div class="tile is-ancestor" id="header" style="min-width: 100%; opacity:80%;">
+            <div class="tile is-vertical notification is-yellow generic">
+                <h1 style="font-size: 32pt;">Cryptocurrency</h1>
+                <div class="tile is-parent">
+                    <div class="tile is-vertical notification is-blue generic">
+                        <h1>NANO (XNO)</h1>
+                        <img src="nano.png">
+                        <code class="wallet" id="nano">nano_3mzyse9hswq8ptiptisum7xpbfq9iybh8j6u5d7nx8ngkgu8kbefge1mj8ey</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script defer src="https://friconix.com/cdn/friconix.js"></script>
+<script>
+document.getElementById('titletile').onclick = function() {
+    location.href = './index.html';
+}
+document.getElementById('donate1').onclick = function() {
+    location.href = './index.html#donate';
+}
+</script>

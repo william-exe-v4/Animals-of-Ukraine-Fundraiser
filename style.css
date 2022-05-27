@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: Source;
-    src: url(SourceCodePro-Regular.otf) format(opentype);
+    src: url(SourceCodePro-Regular.otf);
 }
 html {
     background-color: black;
@@ -30,10 +30,6 @@ p {
     font-family: Ubuntu;
     font-size: 14pt;
     color: white;
-}
-code {
-    font-family: Source;
-    font-size: 14pt;
 }
 .header {
     position: sticky;
@@ -100,4 +96,21 @@ i {
 }
 #donate {
     min-width: 100%;
+}
+#donate1 {
+    z-index: 2049;
+}
+#titletile {
+    cursor: pointer;
+}
+.wallet {
+    font-size: 10pt;
+    cursor: pointer;
+}
+code {
+    font-family: Source;
+    padding: 2px;
+    background-color: black;
+    border: white;
+    border-radius: 32px;
 }
